@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark theme (default) */
+html.dark body {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: none;
+}
+
+/* Light theme */
+html.light body {
+  background-color: #ffffff;
+  color: #1f2937;
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ultra-smooth Custom Cursor (Desktop only) */
+@media (min-width: 768px) {
+  .custom-cursor {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background: #22d3ee;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: none;
+    will-change: transform;
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.5);
+  }
+
+  .custom-cursor::after {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    border-radius: 50%;
+    animation: cursor-pulse 2s infinite;
+  }
+
+  .custom-cursor.hover {
+    background: #8b5cf6;
+    transform: translate(-50%, -50%) scale(1.5);
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.7);
+  }
+
+  html.light .custom-cursor {
+    background: #3b82f6;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+
+  html.light .custom-cursor::after {
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* Mobile: Show default cursor */
+@media (max-width: 767px) {
+  body {
+    cursor: auto !important;
+  }
+  
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
+@keyframes cursor-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Performance optimizations */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .custom-cursor {
+    display: none;
+  }
+  
+  body {
+    cursor: auto;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+html.dark ::-webkit-scrollbar-track {
+  background: #111827;
+}
+
+html.light ::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #22d3ee, #3b82f6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #06b6d4, #1d4ed8);
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.3); }
+  50% { box-shadow: 0 0 30px rgba(34, 211, 238, 0.6); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 5px rgba(34, 211, 238, 0.4), 0 0 10px rgba(34, 211, 238, 0.3), 0 0 15px rgba(34, 211, 238, 0.2);
+  }
+  50% { 
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.6), 0 0 20px rgba(34, 211, 238, 0.5), 0 0 30px rgba(34, 211, 238, 0.4);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Backdrop blur fallback */
+.backdrop-blur-sm {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* GPU acceleration for better performance */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(34, 211, 238, 0.5), 0 0 20px rgba(34, 211, 238, 0.3), 0 0 30px rgba(34, 211, 238, 0.2);
+}
+
+/* Hover effects for interactive elements */
+.hover-lift {
+  transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient border animation */
+@keyframes gradient-border {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-border {
+  background: linear-gradient(-45deg, #22d3ee, #3b82f6, #8b5cf6, #ec4899);
+  background-size: 400% 400%;
+  animation: gradient-border 3s ease infinite;
+}
+
+/* Selection styling */
+html.dark ::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+html.light ::selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #1f2937;
+}
+
+html.dark ::-moz-selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: white;
+}
+
+html.light ::-moz-selection {
+  background: rgba(59, 130, 246, 0.3);
+  color: #1f2937;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+}
+
+html.light button:focus,
+html.light a:focus {
+  outline-color: #3b82f6;
+}
+
+/* Loading animation */
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading {
+  animation: loading 1s linear infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Reduce animations on mobile for better performance */
+  .animate-sparkle {
+    display: none;
+  }
+  
+  /* Better touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Prevent zoom on input focus */
+  input, textarea, select {
+    font-size: 16px;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .custom-cursor {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #000000;
+  }
+  
+  html.light .custom-cursor {
+    background: #000000;
+    box-shadow: 0 0 0 2px #ffffff;
+  }
+}
+
+/* Print styles */
+@media print {
+  .custom-cursor,
+  .animate-sparkle,
+  .animate-pulse,
+  .animate-spin {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

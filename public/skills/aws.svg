@@ -1,0 +1,7 @@
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 14.5c-1.5 0-2.5-1-2.5-2.5s1-2.5 2.5-2.5 2.5 1 2.5 2.5-1 2.5-2.5 2.5z" fill="#FF9900"/>
+  <path d="M17.5 14.5c-1.5 0-2.5-1-2.5-2.5s1-2.5 2.5-2.5 2.5 1 2.5 2.5-1 2.5-2.5 2.5z" fill="#FF9900"/>
+  <path d="M12 8c-1.5 0-2.5-1-2.5-2.5S10.5 3 12 3s2.5 1 2.5 2.5S13.5 8 12 8z" fill="#FF9900"/>
+  <path d="M4 18c0-2 2-4 8-4s8 2 8 4c0 1-1 2-2 2H6c-1 0-2-1-2-2z" fill="#232F3E"/>
+  <text x="12" y="19" text-anchor="middle" fill="white" font-size="6" font-weight="bold">AWS</text>
+</svg>

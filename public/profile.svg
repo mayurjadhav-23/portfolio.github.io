@@ -1,0 +1,6 @@
+<svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="72" cy="72" r="72" fill="#3B82F6"/>
+  <circle cx="72" cy="58" r="20" fill="white"/>
+  <path d="M72 88C85.2548 88 96 98.7452 96 112V144H48V112C48 98.7452 58.7452 88 72 88Z" fill="white"/>
+  <text x="72" y="130" text-anchor="middle" fill="#3B82F6" font-family="Arial, sans-serif" font-size="12" font-weight="bold">Profile Photo</text>
+</svg>
