@@ -3,13 +3,13 @@ export const projects = [
     title: "Web Defender: Security Framework",
     desc: "Browser extension to defend against cyber threats with advanced filtering and user education.",
     tech: ["JavaScript", "Security", "AWS"],
-    link: "https://github.com/mayurjadhav-23/web-defender",
+    link: "https://github.com/mayurjadhav-23/Web-Defender",
   },
   {
     title: "PC Wakeup Alert Using AWS Cloud",
     desc: "AWS-powered tool for instant notification on system activation, leveraging Lambda, SNS.",
     tech: ["AWS", "Automation"],
-    link: "https://github.com/mayurjadhav-23/aws-pc-wakeup-alert",
+    link: "https://github.com/mayurjadhav-23/PC-Wakeup-Alert-AWS-Cloud",
   },
   {
     title: "Real-Time Chat App Deployment with K8s",
@@ -21,6 +21,6 @@ export const projects = [
     title: "End-to-End DevOps Pipeline (Go App)",
     desc: "CI/CD pipeline for Go web app using GitHub Actions, Docker, and ArgoCD.",
     tech: ["Go", "Docker", "GitHub Actions"],
-    link: "https://github.com/mayurjadhav-23/go-devops-pipeline",
+    link: "https://github.com/mayurjadhav-23/go-web-app",
   },
 ];

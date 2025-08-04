@@ -7,6 +7,8 @@ export const skillsData = [
   { name: "GitHub Actions", logo: "https://avatars.githubusercontent.com/u/44036562?s=200&v=4", color: "text-white" },
   { name: "ArgoCD", logo: "https://raw.githubusercontent.com/argoproj/argo-cd/master/docs/assets/logo.png", color: "text-orange-500" },
   { name: "Helm", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/helm/helm-original.svg", color: "text-blue-300" },
+  { name: "Prometheus", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg", color: "text-orange-400" },
+  { name: "Grafana", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg", color: "text-orange-500" },
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", color: "text-yellow-400" },
   { name: "Bash", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg", color: "text-green-400" },
   { name: "Linux", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", color: "text-yellow-500" },
