@@ -12,10 +12,10 @@ export const projects = [
     link: "https://github.com/mayurjadhav-23/PC-Wakeup-Alert-AWS-Cloud",
   },
   {
-    title: "Real-Time Chat App Deployment with K8s",
-    desc: "Deployed a chat app using Kubernetes and declarative YAML for scalable production.",
-    tech: ["Kubernetes", "CI/CD"],
-    link: "https://github.com/mayurjadhav-23/k8s-chatapp-deployment",
+    title: "Real-Time Chat App Devopsified",
+    desc: "Enhanced a full-stack chat application with production-ready Kubernetes deployment using Helm charts, CI/CD pipeline, and multi-environment configurations.",
+    tech: ["Kubernetes", "CI/CD", "Helm", "Docker", "React"],
+    link: "https://github.com/mayurjadhav-23/full-stack-app-devopsified",
   },
   {
     title: "End-to-End DevOps Pipeline (Go App)",
