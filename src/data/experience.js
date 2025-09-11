@@ -6,7 +6,7 @@ export const experience = [
     highlights: [
       "Automated environment setup and monitoring using Terraform, Ansible, and AWS Cloud.",
       "Built CI/CD pipelines with Jenkins and GitHub Actions to streamline deployment of security testing tools.",
-      "Containerized applications and deployed on Docker & Kubernetes clusters to replicate enterprise environments."
+      "Containerized applications and deployed on Docker & Kubernetes clusters to replicate enterprise environments.",
       "Integrated Prometheus & Grafana dashboards to monitor infrastructure health during red team operations.",
     ],
   },
