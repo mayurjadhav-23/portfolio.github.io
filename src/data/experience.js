@@ -1,11 +1,13 @@
 export const experience = [
   {
-    role: "Red Team Analyst",
+    role: "Devops Intern",
     company: "DEEPCYTES CYBER LABS",
     period: "June 2024 – May 2025",
     highlights: [
-      "Performed 30+ red team operations, covering reconnaissance, exploitation, and simulation.",
-      "Delivered detailed vulnerability assessments for improved defense.",
+      "Automated environment setup and monitoring using Terraform, Ansible, and AWS Cloud.",
+      "Built CI/CD pipelines with Jenkins and GitHub Actions to streamline deployment of security testing tools.",
+      "Containerized applications and deployed on Docker & Kubernetes clusters to replicate enterprise environments."
+      "Integrated Prometheus & Grafana dashboards to monitor infrastructure health during red team operations.",
     ],
   },
   {
