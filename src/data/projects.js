@@ -1,9 +1,9 @@
 export const projects = [
   {
-    title: "Web Defender: Security Framework",
-    desc: "Browser extension to defend against cyber threats with advanced filtering and user education.",
-    tech: ["JavaScript", "Security", "AWS"],
-    link: "https://github.com/mayurjadhav-23/Web-Defender",
+    title: "Terraform-Infrastructure-Automation",
+    desc: "Built production-ready infrastructure with Terraform provisioning VPC, EC2 instances, and Application Load Balancer",
+    tech: ["Terraform", "Apache", "AWS"],
+    link: "https://github.com/mayurjadhav-23/terraform-infrastructure-automation",
   },
   {
     title: "PC Wakeup Alert Using AWS Cloud",
