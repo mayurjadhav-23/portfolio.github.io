@@ -78,7 +78,7 @@ export default function About() {
               >
                 {[
                   { icon: "🚀", title: "DevOps", desc: "CI/CD, Infrastructure as Code" },
-                  { icon: "☁️", title: "Cloud", desc: "AWS, Azure, Multi-cloud" },
+                  { icon: "☁️", title: "Cloud", desc: "AWS, GCP, Multi-cloud" },
                   { icon: "🐳", title: "Containers", desc: "Docker, Kubernetes, Helm" },
                   { icon: "⚡", title: "Automation", desc: "Terraform, Ansible, Scripts" }
                 ].map((item, idx) => (
