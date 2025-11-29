@@ -1,5 +1,21 @@
 export const experience = [
   {
+    role: "Cloud Engineer",
+    company: "Searce Inc",
+    period: "Nov 2025 - Present",
+    location: "Mumbai",
+    type: "Full-Time",
+    highlights: [
+      "Understanding real-world cloud environments and infrastructure workflows",
+      "Working with Kubernetes, Terraform (IaC), and CI/CD tooling",
+      "Learning internal cloud practices, deployment standards, and engineering culture",
+      "Contributing to automation and improving reliability wherever possible",
+      "Strengthening fundamentals to support future customer-facing projects",
+    ],
+    technologies: ["Terraform", "Ansible", "AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Prometheus", "Grafana"],
+    ]
+  },
+  {
     role: "DevOps Intern",
     company: "DEEPCYTES CYBER LABS",
     period: "June 2024 – May 2025",
@@ -19,26 +35,6 @@ export const experience = [
       "99.5% infrastructure monitoring coverage", 
       "30% cost optimization",
       "15+ daily automated deployments"
-    ]
-  },
-  {
-    role: "Graphic Designer",
-    company: "MG TECHNOSOFT",
-    period: "June 2023 – August 2023",
-    location: "Mumbai, India",
-    type: "Internship",
-    highlights: [
-      "Designed 50+ digital branding assets including logos, banners, and marketing materials",
-      "Enhanced client engagement by 20% through improved visual communication strategies",
-      "Collaborated with marketing team to create cohesive brand identity across multiple platforms",
-      "Utilized Adobe Creative Suite to deliver high-quality designs within tight deadlines",
-      "Contributed to 5+ successful client campaigns with measurable engagement improvements"
-    ],
-    technologies: ["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma"],
-    achievements: [
-      "50+ digital assets created",
-      "20% increase in client engagement",
-      "5+ successful campaigns"
     ]
   },
 ];
