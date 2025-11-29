@@ -13,7 +13,6 @@ export const experience = [
       "Strengthening fundamentals to support future customer-facing projects",
     ],
     technologies: ["Terraform", "Ansible", "AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "Prometheus", "Grafana"],
-    ]
   },
   {
     role: "DevOps Intern",
